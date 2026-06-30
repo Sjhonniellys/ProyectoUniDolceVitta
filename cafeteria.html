@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafetería - Dolce Vitta</title>
+  <link rel="stylesheet" href="css/cafeteria.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <span>DOLCE VITTA</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="cafeteria.html">Cafetería</a></li>
+        <li><a href="recetas.html">Recetas</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li>
+          <a href="#" id="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+          </a>
+          <button id="view-invoice-btn" style="display: none;">Ver Factura</button>
+
+<div id="invoice-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-invoice-modal">&times;</span>
+    <div id="invoice-content"></div>
+  </div>
+</div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="courses-gallery">
+      <h1>CAFETERIA</h1>
+      <p class="subtitle">Conoce nuestros postres</p>
+  
+      <div class="product-options">
+        <div class="filter-by">
+          <span>Filtrar por:</span>
+          <select id="category-filter">
+            <option value="all">Todos</option>
+            <option value="tradicional">Tradicionales</option>
+            <option value="italiano">Italianos</option>
+          </select>
+        </div>
+        <div class="sort-by">
+          <span>Ordenar por:</span>
+          <select id="sort-option">
+            <option value="default">Destacados</option>
+            <option value="price-asc">Precio: menor a mayor</option>
+            <option value="price-desc">Precio: mayor a menor</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="product-grid">
+        <!-- Producto 1 -->
+        <div class="product-card" data-category="tradicional" data-price="12.50" data-stock="8" data-id="1">
+          <div class="product-badge">Más vendido</div>
+          <img src="images/pan de jamon.jpeg" alt="Pan de Jamón">
+          <div class="product-info">
+            <h3>Pan de Jamón</h3>
+            <p class="product-desc">Deléitate con un rico y venezolano pan de jamón relleno de jamón, aceitunas y pasas.</p>
+            <div class="product-meta">
+              <span class="servings"><i class="fas fa-utensils"></i> <span class="stock">8</span> porciones disponibles</span>
+              <span class="price">$12.50 USD</span>
+            </div>
+            <div class="product-type-select">
+              <select class="product-type">
+                <option value="porcion">Porción Individual</option>
+                <option value="torta">Torta Completa</option>
+              </select>
+            </div>
+            <div class="product-actions">
+              <div class="quantity-control">
+                <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+              </div>
+              <button class="add-to-cart">Añadir</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Producto 2 -->
+        <div class="product-card" data-category="italiano" data-price="15.50" data-stock="12" data-id="2">
+          <div class="product-badge">Especialidad</div>
+          <img src="images/doll.jpg" alt="Pastel DolceVitta">
+          <div class="product-info">
+            <h3>Pastel DolceVitta</h3>
+            <p class="product-desc">Auténtico sabor italiano de nuestra casa. Capas de bizcocho esponjoso con crema.</p>
+            <div class="product-meta">
+              <span class="servings"><i class="fas fa-utensils"></i> <span class="stock">12</span> porciones disponibles</span>
+              <span class="price">$15.50 USD</span>
+            </div>
+            <div class="product-type-select">
+              <select class="product-type">
+                <option value="porcion">Porción Individual</option>
+                <option value="torta">Torta Completa</option>
+              </select>
+            </div>
+            <div class="product-actions">
+              <div class="quantity-control">
+                <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+              </div>
+              <button class="add-to-cart">Añadir</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Producto 3 -->
+        <div class="product-card" data-category="italiano" data-price="10.50" data-stock="10" data-id="3">
+          <img src="images/pos.jpg" alt="Pastel Italiano">
+          <div class="product-info">
+            <h3>Pastel Italiano</h3>
+            <p class="product-desc">Un rico postre auténtico con ingredientes importados directamente de Italia.</p>
+            <div class="product-meta">
+              <span class="servings"><i class="fas fa-utensils"></i> <span class="stock">10</span> porciones disponibles</span>
+              <span class="price">$10.50 USD</span>
+            </div>
+            <div class="product-type-select">
+              <select class="product-type">
+                <option value="porcion">Porción Individual</option>
+                <option value="torta">Torta Completa</option>
+              </select>
+            </div>
+            <div class="product-actions">
+              <div class="quantity-control">
+                <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+              </div>
+              <button class="add-to-cart">Añadir</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Producto 4 -->
+        <div class="product-card" data-category="tradicional" data-price="6.00" data-stock="6" data-id="4">
+          <img src="images/quesillo.jpg" alt="Quesillo">
+          <div class="product-info">
+            <h3>Quesillo</h3>
+            <p class="product-desc">Un clásico que nunca pasa de moda. Suave y cremoso flan venezolano.</p>
+            <div class="product-meta">
+              <span class="servings"><i class="fas fa-utensils"></i> <span class="stock">6</span> porciones disponibles</span>
+              <span class="price">$6.00 USD</span>
+            </div>
+            <div class="product-type-select">
+              <select class="product-type">
+                <option value="porcion">Porción Individual</option>
+                <option value="torta">Torta Completa</option>
+              </select>
+            </div>
+            <div class="product-actions">
+              <div class="quantity-control">
+                <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+              </div>
+              <button class="add-to-cart">Añadir</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pedidos Personalizados -->
+    <section class="custom-orders">
+      <h2>Pedidos Personalizados</h2>
+      <form id="custom-order-form">
+        <label for="cake-size">Tamaño de la Torta:</label>
+        <select id="cake-size" required>
+          <option value="1kg">1 Kg</option>
+          <option value="2kg">2 Kg</option>
+          <option value="3kg">3 Kg</option>
+        </select>
+
+        <label for="cake-flavor">Sabor:</label>
+        <select id="cake-flavor" required>
+          <option value="chocolate">Chocolate</option>
+          <option value="vainilla">Vainilla</option>
+          <option value="fresa">Fresa</option>
+        </select>
+
+        <label for="cake-decoration">Decoración:</label>
+        <select id="cake-decoration" required>
+          <option value="flores">Flores</option>
+          <option value="frutas">Frutas</option>
+          <option value="chocolate">Chocolate</option>
+        </select>
+
+        <label for="message">Mensaje Personalizado:</label>
+        <textarea id="message" placeholder="Escribe tu mensaje aquí..."></textarea>
+
+        <button type="submit">Enviar Pedido</button>
+      </form>
+      
+      <div id="order-confirmation" style="display: none;">
+        <h3>¡Pedido Recibido!</h3>
+        <div id="order-details"></div>
+        <p id="order-status">Estado: <span>En proceso</span></p>
+        <p id="order-time">Tiempo estimado: <span>30-45 minutos</span></p>
+      </div>
+    </section>
+
+    <!-- Chatbot -->
+    <section class="chatbot-section">
+      <h2>Personaliza tu Pedido con Nuestro Asistente</h2>
+      <div id="chatbot-container">
+        <div id="chat-window">
+          <div id="chat-messages">
+            <!-- Mensajes del chatbot aparecerán aquí -->
+          </div>
+        </div>
+        <div id="chat-input-container">
+          <input type="text" id="user-input" placeholder="Escribe tu mensaje aquí...">
+          <button id="send-button">Enviar</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Telegram CTA -->
+    <section class="telegram-cta">
+      <h2>¿Necesitas ayuda más personalizada?</h2>
+      <p>Contáctanos directamente en Telegram para resolver todas tus dudas y realizar pedidos especiales con nuestro equipo.</p>
+      <a href="https://t.me/DolceVBot" target="_blank" class="telegram-link">
+        <i class="fab fa-telegram"></i> Chatea con nosotros en Telegram
+      </a>
+    </section>
+  </main>
+
+  <!-- Carrito de compras -->
+<div id="cart-sidebar">
+  <div class="cart-header">
+    <h3>Tu Carrito</h3>
+    <button id="close-cart">&times;</button>
+  </div>
+  <div id="cart-items"></div>
+  <div class="cart-summary">
+    <div class="cart-total">
+      <span>Total:</span>
+      <span id="cart-total">$0.00</span>
+    </div>
+    <button id="checkout-btn">Finalizar Compra</button>
+    <!-- Botón Ver Factura SOLO aquí -->
+    <button id="view-invoice-btn" style="margin-top:10px; background:#db7093; color:white; border:none; border-radius:5px; padding:10px; width:100%; font-weight:bold; display:none;">
+      <i class="fas fa-file-invoice"></i> Ver Factura
+    </button>
+  </div>
+</div>
+<div id="cart-overlay"></div>
+<!-- MODAL DE FACTURA -->
+<div id="invoice-modal" class="modal-invoice">
+  <div class="modal-invoice-content">
+    <span class="close-invoice-modal">&times;</span>
+    <div id="invoice-content"></div>
+  </div>
+</div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Dolce Vitta</h3>
+        <p>Pastelería artesanal con los mejores ingredientes y técnicas profesionales.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <p><i class="fas fa-envelope"></i> info@dolcevitta.com</p>
+        <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+      </div>
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+        <div class="social-icons">
+          <a href="https://t.me/DolceVBot"><i class="fa-brands fa-telegram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Dolce Vitta. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante del chatbot -->
+  <div class="chatbot-floating" title="¿Necesitas ayuda? ¡Habla con nosotros!"></div>
+
+  <script src="js/cafeteria.js"></script>
+</body>
+</html>

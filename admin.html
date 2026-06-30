@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Pedidos - Dolce Vitta</title>
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="admin-container">
+    <!-- Sidebar -->
+    <aside class="admin-sidebar">
+      <h2>Dolce Vitta</h2>
+      <nav>
+        <ul>
+          <li class="active"><a href="#pedidos"><i class="fas fa-clipboard-list"></i> Pedidos</a></li>
+          <li><a href="#productos"><i class="fas fa-cookie-bite"></i> Productos</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Contenido Principal -->
+    <main class="admin-content">
+        <!-- Modificar el header en admin.html -->
+    <header class="admin-header">
+     <div class="header-content">
+      <div>
+      <h1>Panel de Pedidos</h1>
+     </div>
+      <div class="admin-actions">
+      <a href="index.html" class="btn-return"><i class="fas fa-home"></i> Inicio</a>
+      <a href="cafeteria.html" class="btn-return"><i class="fas fa-coffee"></i> Cafetería</a>
+      <button id="refresh-btn"><i class="fas fa-sync-alt"></i> Actualizar</button>
+      <button id="logout-btn" class="btn-logout"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</button>
+        </div>
+      </div>
+      </header>
+
+      <!-- Tabla de Pedidos -->
+      <section class="orders-table">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Cliente</th>
+              <th>Productos</th>
+              <th>Total</th>
+              <th>Estado</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="orders-body">
+            <!-- Los pedidos se cargarán aquí con JavaScript -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <!-- Modal para detalles del pedido -->
+  <!-- Modificar el modal de detalles en admin.html -->
+<div id="order-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Detalles del Pedido #<span id="order-id"></span></h2>
+      <div id="order-details"></div>
+      <div class="order-info">
+        <p><strong>N° Factura:</strong> <span id="invoice-number"></span></p>
+        <p><strong>Identificación:</strong> <span id="customer-id"></span></p>
+      </div>
+      <div class="order-status">
+        <label>Cambiar Estado:</label>
+        <select id="status-select">
+          <option value="pendiente">Pendiente</option>
+          <option value="preparacion">En preparación</option>
+          <option value="listo">Listo para entregar</option>
+          <option value="completado">Completado</option>
+        </select>
+        <button id="update-status">Actualizar</button>
+        <div class="order-status">
+          <label>Cambiar Estado:</label>
+          <select id="status-select">
+            <option value="pendiente">Pendiente</option>
+            <option value="preparacion">En preparación</option>
+            <option value="listo">Listo para entregar</option>
+            <option value="completado">Completado</option>
+          </select>
+          <button id="update-status">Actualizar</button>
+          <button id="delete-order-modal" style="background:#e74c3c; color:white; border-radius:4px; margin-left:10px;"><i class="fas fa-trash"></i> Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>

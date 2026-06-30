@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos de Postres - Dolce Vitta</title>
+  <link rel="stylesheet" href="css/cursos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <span>DOLCE VITTA</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="cafeteria.html">Cafetería</a></li>
+        <li><a href="recetas.html">Recetas</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="courses-gallery">
+      <h1>Nuestros Cursos de Repostería</h1>
+      <p class="subtitle">Aprende con los mejores maestros pasteleros</p>
+      
+      <div class="course-grid">
+        <!-- Curso Gratis -->
+        <div class="course-card">
+          <div class="course-badge free">GRATIS</div>
+          <img src="images/carrot.jpg" alt="Curso Gratis - Carrot Gluten Free">
+          <div class="course-content">
+            <h2>Carrot Cake Gluten Free</h2>
+            <p>Aprende a preparar una torta de zanahoria saludable libre de gluten y lactosa.</p>
+            <div class="course-meta">
+              <span><i class="far fa-clock"></i> 2 horas</span>
+              <span><i class="fas fa-user-graduate"></i> 1,250 estudiantes</span>
+            </div>
+            <div class="course-rating">
+              <span class="stars">★★★★★</span>
+              <span>(48)</span>
+            </div>
+            <a href="https://www.youtube.com/watch?v=raKm-5YyJho" target="_blank" class="btn free">
+              <i class="fas fa-play-circle"></i> Ver Curso
+            </a>
+          </div>
+        </div>
+
+        <!-- Curso Pagado 1 -->
+        <div class="course-card">
+          <div class="course-badge bestseller">HOT</div>
+          <img src="images/beso.png" alt="Curso Pagado - Pastel Beso de Ángel">
+          <div class="course-content">
+            <h2>Pastel Beso de Ángel</h2>
+            <p>Descubre cómo preparar este pastel celestial y sorprende a todos.</p>
+            <div class="course-meta">
+              <span><i class="far fa-clock"></i> 3.5 horas</span>
+              <span><i class="fas fa-user-graduate"></i> 890 estudiantes</span>
+            </div>
+            <div class="course-rating">
+              <span class="stars">★★★★☆</span>
+              <span>(36)</span>
+            </div>
+            <div class="price-container">
+              <span class="original-price">$15.00 USD</span>
+              <span class="price">$10.00 USD</span>
+            </div>
+            <a href="#" class="btn paid" data-course="angel" data-price="10.00">
+              <i class="fas fa-shopping-cart"></i> Comprar Curso
+            </a>
+          </div>
+        </div>
+
+        <!-- Curso Pagado 2 -->
+        <div class="course-card">
+          <div class="course-badge new">NUEVO</div>
+          <img src="images/maca.jpg" alt="Curso Pagado - Macarons Perfectos">
+          <div class="course-content">
+            <h2>Macarons Perfectos</h2>
+            <p>Descubre los secretos para macarons perfectos y deliciosos.</p>
+            <div class="course-meta">
+              <span><i class="far fa-clock"></i> 4 horas</span>
+              <span><i class="fas fa-user-graduate"></i> 520 estudiantes</span>
+            </div>
+            <div class="course-rating">
+              <span class="stars">★★★★★</span>
+              <span>(24)</span>
+            </div>
+            <div class="price-container">
+              <span class="price">$5.00 USD</span>
+            </div>
+            <a href="#" class="btn paid" data-course="macarons" data-price="5.00">
+              <i class="fas fa-shopping-cart"></i> Comprar Curso
+            </a>
+          </div>
+        </div>
+
+        <!-- Curso Pagado 3 -->
+        <div class="course-card">
+          <img src="images/Cheese-Cake-de-fresa-pastelería-mária-almenara(1).jpg" alt="Curso Pagado - Cheesecake Clásico">
+          <div class="course-content">
+            <h2>Cheesecake Clásico</h2>
+            <p>Domina la técnica para preparar un cheesecake suave y cremoso.</p>
+            <div class="course-meta">
+              <span><i class="far fa-clock"></i> 5 horas</span>
+              <span><i class="fas fa-user-graduate"></i> 1,420 estudiantes</span>
+            </div>
+            <div class="course-rating">
+              <span class="stars">★★★★☆</span>
+              <span>(62)</span>
+            </div>
+            <div class="price-container">
+              <span class="price">$25.00 USD</span>
+            </div>
+            <a href="#" class="btn paid" data-course="cheesecake" data-price="25.00">
+              <i class="fas fa-shopping-cart"></i> Comprar Curso
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feedback-section">
+      <h2>Tu Opinión Nos Importa</h2>
+      
+      <div class="feedback-grid">
+        <!-- Encuesta para sugerencias -->
+        <div class="survey">
+          <div class="feedback-header">
+            <i class="fas fa-lightbulb"></i>
+            <h3>¿Qué curso crees que deberíamos incluir?</h3>
+          </div>
+          <form id="survey-form">
+            <textarea id="suggestion" placeholder="Escribe aquí tu sugerencia de nuevo curso..." required></textarea>
+            <button type="submit">
+              <i class="fas fa-paper-plane"></i> Enviar Sugerencia
+            </button>
+          </form>
+        </div>
+
+        <!-- Calificaciones -->
+        <div class="ratings">
+          <div class="feedback-header">
+            <i class="fas fa-star"></i>
+            <h3>Califica Nuestros Cursos</h3>
+          </div>
+          <ul class="rating-list">
+            <li>
+              <span> 🎂Carrot Cake Gluten Free</span>
+              <div class="stars" data-course="carrot">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+              </div>
+            </li>
+            <li>
+              <span> 🎂Pastel Beso de Ángel</span>
+              <div class="stars" data-course="angel">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+              </div>
+            </li>
+            <li>
+              <span>🍪Macarons Perfectos</span>
+              <div class="stars" data-course="macarons">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+              </div>
+            </li>
+            <li>
+              <span>🍰Cheesecake Clásico</span>
+              <div class="stars" data-course="cheesecake">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal de Compra Mejorado -->
+    <div id="purchase-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>¡Estás a un paso de dominar la repostería!</h2>
+        <div id="course-details">
+          <h3 id="modal-course-title"></h3>
+          <p id="modal-course-price"></p>
+          <p id="modal-course-description" style="font-style:italic; color:#b85c38;">
+            ¡Sorprende a todos con recetas irresistibles! Accede a este curso exclusivo y transforma tus postres en obras de arte. Aprende de la mano de expertos y lleva tu pasión al siguiente nivel.
+          </p>
+          <div id="modal-course-modules">
+            <h4>¿Qué aprenderás?</h4>
+            <ul>
+              <li>Módulo 1: Introducción y secretos del postre</li>
+              <li>Módulo 2: Preparación paso a paso</li>
+              <li>Módulo 3: Técnicas profesionales y decoración</li>
+              <li>Módulo 4: Consejos para sorprender a todos</li>
+            </ul>
+          </div>
+        </div>
+        <form id="payment-form">
+          <h3>Datos para tu acceso</h3>
+          <div class="form-group">
+            <label for="customer-name">Nombre completo</label>
+            <input type="text" id="customer-name" name="customer-name" required>
+          </div>
+          <div class="form-group">
+            <label for="customer-email">Correo electrónico</label>
+            <input type="email" id="customer-email" name="customer-email" required>
+          </div>
+          <!-- Puedes agregar más campos si lo deseas -->
+          <div class="payment-methods">
+            <h3>Método de Pago</h3>
+            <div class="payment-options">
+              <label>
+                <input type="radio" name="payment" value="paypal" checked>
+                <img src="images/paypal.png" alt="PayPal">
+              </label>
+              <label>
+                <input type="radio" name="payment" value="credit-card">
+                <img src="images/credi-card.jpg" alt="Tarjeta de Crédito">
+              </label>
+            </div>
+          </div>
+          <button type="submit" id="confirm-purchase" class="btn confirm-btn">Confirmar Compra</button>
+        </form>
+      </div>
+    </div>
+
+
+    <!-- Modal de Agradecimiento -->
+    <div id="thanks-modal" class="modal">
+      <div class="modal-content small">
+        <div class="thank-you">
+          <i class="fas fa-check-circle"></i>
+          <h2>¡Gracias por tu opinión!</h2>
+          <p>Valoramos mucho tu feedback para mejorar nuestros cursos.</p>
+          <button class="btn close-thanks">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Dolce Vitta</h3>
+        <p>Pastelería artesanal con los mejores ingredientes y técnicas profesionales.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <p><i class="fas fa-envelope"></i> dolcevittapast@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+      </div>
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+        <div class="social-icons">
+          <a href="https://t.me/DolceVBot"><i class="fa-brands fa-telegram"></i>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+         
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Dolce Vitta. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="js/cursos.js"></script>
+</body>
+</html>

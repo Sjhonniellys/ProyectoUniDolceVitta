@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Dolce Vitta</title>
+  <link rel="stylesheet" href="css/contacto.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Contacto</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="cafeteria.html">Cafetería</a></li>
+        <li><a href="recetas.html">Recetas</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero-contact">
+      <div class="hero-content">
+        <h2>¡Déjanos endulzar tu día!</h2>
+        <p>Estamos aquí para responder todas tus preguntas y recibir tus comentarios.</p>
+      </div>
+    </section>
+
+    <div class="contact-container">
+      <section class="contact-info">
+        <h2>Información de Contacto</h2>
+        <div class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <p>Email: <a href="mailto:info@dolcevitta.com">dolcevittapast@gmail.com</a></p>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-phone"></i>
+          <p>Teléfono: <a href="tel:+1234567890">+1 234 567 890</a></p>
+        </div>
+        <div class="contact-card">
+          <i class="fa-brands fa-telegram"></i>
+          <p>Telegram: <a href="https://t.me/DolceVBot">@DolceVBot</a></p>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Dirección: Calle Principal #12, Ciudad Gourmet, País Dulce</p>
+        </div>
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215209054345!2d-73.98784468459382!3d40.74844047932789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjQiTiA3M8KwNTknMTkuMiJX!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </section>
+
+      <section class="contact-form">
+        <h2>Envíanos un Mensaje</h2>
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Tu Nombre" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Tu Correo Electrónico" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Asunto:</label>
+            <select id="subject" name="subject">
+              <option value="consulta">Consulta General</option>
+              <option value="pedido">Pedido Especial</option>
+              <option value="evento">Eventos Corporativos</option>
+              <option value="curso">Información sobre Cursos</option>
+              <option value="reclamo">Reclamo o Sugerencia</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          </div>
+          
+          <button type="submit">Enviar Mensaje <i class="fas fa-paper-plane"></i></button>
+        </form>
+      </section>
+    </div>
+
+    <section class="faq-section">
+      <h2>Preguntas Frecuentes</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question">¿Cuál es el horario de atención? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer">
+            <p>Nuestra pastelería está abierta de lunes a sábado de 8:00 am a 8:00 pm. Los domingos abrimos de 9:00 am a 6:00 pm.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">¿Hacen pasteles para eventos especiales? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer">
+            <p>¡Sí! Preparamos pasteles personalizados para bodas, cumpleaños y eventos corporativos. Recomendamos hacer el pedido con al menos 72 horas de anticipación.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">¿Tienen opciones sin gluten o veganas? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer">
+            <p>Sí, ofrecemos una variedad de opciones sin gluten, veganas y para otras necesidades dietéticas especiales. Consulta nuestro menú o contáctanos para más información.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>Lo que dicen nuestros clientes</h2>
+      <div class="testimonial-container">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>"El pastel de chocolate fue increíble para mi cumpleaños. ¡El mejor que he probado!"</p>
+            <div class="client-info">
+              <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Cliente satisfecho">
+              <span>María G.</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>"Excelente servicio y atención. Los cupcakes para mi boda fueron perfectos."</p>
+            <div class="client-info">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente satisfecho">
+              <span>Carlos R.</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>"Tomé un curso de decoración y aprendí mucho. Los instructores son muy profesionales."</p>
+            <div class="client-info">
+              <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Cliente satisfecho">
+              <span>Ana L.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rate-us">
+      <h2>Califica Nuestro Servicio</h2>
+      <form id="rating-form">
+        <div class="rating-input">
+          <input type="radio" id="star5" name="rating" value="5">
+          <label for="star5"><i class="fas fa-star"></i></label>
+          
+          <input type="radio" id="star4" name="rating" value="4">
+          <label for="star4"><i class="fas fa-star"></i></label>
+          
+          <input type="radio" id="star3" name="rating" value="3">
+          <label for="star3"><i class="fas fa-star"></i></label>
+          
+          <input type="radio" id="star2" name="rating" value="2">
+          <label for="star2"><i class="fas fa-star"></i></label>
+          
+          <input type="radio" id="star1" name="rating" value="1">
+          <label for="star1"><i class="fas fa-star"></i></label>
+        </div>
+        
+        <div class="form-group">
+          <label for="feedback">Comentario (opcional):</label>
+          <textarea id="feedback" name="feedback" placeholder="Cuéntanos tu experiencia..."></textarea>
+        </div>
+        
+        <button type="submit">Enviar Calificación</button>
+      </form>
+    </section>
+
+    <section class="social-media">
+      <h2>Conéctate con Nosotros</h2>
+      <div class="social-container">
+        <a href="https://www.facebook.com/dolcevitta" target="_blank" class="social-icon facebook">
+          <i class="fab fa-facebook-f"></i>
+          <span>Facebook</span>
+        </a>
+        <a href="https://www.instagram.com/dolcevitta" target="_blank" class="social-icon instagram">
+          <i class="fab fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+        <a href="https://t.me/DolceVBot" target="_blank" class="social-icon telegram">
+          <i class="fab fa-telegram"></i>
+          <span>Telegram</span>
+        </a>
+        <a href="#" class="social-icon whatsapp">
+          <i class="fab fa-whatsapp"></i>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Dolce Vitta</h3>
+        <p>Pastelería artesanal con los mejores ingredientes y técnicas profesionales.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Horario de Atención</h3>
+        <p><i class="far fa-clock"></i> Lunes-Sábado: 8:00 am - 8:00 pm</p>
+        <p><i class="far fa-clock"></i> Domingo: 9:00 am - 6:00 pm</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <p><i class="fas fa-envelope"></i> info@dolcevitta.com</p>
+        <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+      </div>
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+        <div class="social-icons">
+          <a href="https://t.me/DolceVBot"><i class="fa-brands fa-telegram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Dolce Vitta. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // FAQ functionality
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        const icon = question.querySelector('i');
+        
+        answer.classList.toggle('active');
+        icon.classList.toggle('fa-chevron-down');
+        icon.classList.toggle('fa-chevron-up');
+      });
+    });
+
+    // Rating stars
+    document.querySelectorAll('.rating-input label').forEach(label => {
+      label.addEventListener('click', () => {
+        const ratingValue = label.previousElementSibling.value;
+        console.log(`Rating selected: ${ratingValue} stars`);
+      });
+    });
+
+    // Form submission
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
+      this.reset();
+    });
+
+    document.getElementById('rating-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const rating = document.querySelector('input[name="rating"]:checked');
+      if (rating) {
+        alert(`¡Gracias por calificarnos con ${rating.value} estrellas!`);
+      } else {
+        alert('Por favor selecciona una calificación.');
+      }
+      this.reset();
+    });
+  </script>
+</body>
+</html>
